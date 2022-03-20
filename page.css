@@ -1,37 +1,58 @@
-* {
-}
-body {
-  font-family: Inter, sans serif;
-}
-.my-image {
-  width: 300px;
-  height: 300px;
-  border-radius: 8px;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 25%);
-  transform: scale(1.2);
-  padding-left: 20px;
-  background-color: transparent;
-}
 .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 15px;
+}
+.numbers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  gap: 5px;
+}
+.number {
+  width: 33px;
+  height: 33px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 200px 0 0 0;
+  text-decoration: none;
+  color: black;
 }
-.container2 {
+.number:link,
+.number:visited {
+  border-radius: 50%;
+}
+.number:hover {
+  border: 0px solid green;
+  border-radius: 50%;
   background-color: green;
-  width: 800px;
-  height: 300px;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: row;
-  gap: 32px;
-}
-.text {
-  width: 450px;
-  font-family: "Inter", sans-serif;
   color: aliceblue;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 30px;
+}
+.btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid green;
+  background: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: green;
+}
+.btn:hover .btn-icon {
+  color: white;
+}
+.current-number {
+  background-color: green;
+  color: white;
+}
+.btn-icon {
+  color: green;
+}
+.btn-icon:hover {
+  color: white;
 }
